@@ -1,0 +1,13 @@
+*.out
+*.d
+*.__pycache__
+*.dat
+*.csv
+.vscode
+
+# Compiled binaries
+branch-misprediction
+dram-refresh
+false-sharing
+locality-line
+locality-col
