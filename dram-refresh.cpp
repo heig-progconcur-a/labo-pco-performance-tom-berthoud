@@ -11,7 +11,7 @@
 #include <cassert>
 
 #ifndef REPETITIONS
-    #define REPETITIONS 512 * 1024
+    #define REPETITIONS 80 *512 * 1024
 #endif
 
 struct Record

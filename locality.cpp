@@ -2,11 +2,11 @@
 #include <vector>
 #include <chrono>
 
-const int N = 10'000;
+const int N = 1'000;
 
 int main() {
     std::vector<int> matrix(static_cast<size_t>(N) * N, 0);
-
+    std::cout << "Taille de la matrice : " << N << "x" << N << std::endl;
     for (size_t i = 0; i < N; i++)
         for (size_t j = 0; j < N; j++)
             matrix[i * N + j] = static_cast<int>(i * N + j);
