@@ -112,9 +112,7 @@ Conclusion pour cette experience : le concept de cache locality est compris, mai
 
 Ce laboratoire montre que les performances d'un programme ne dependent pas seulement de l'algorithme visible dans le code. Le processeur, les caches, la prediction d'embranchements, la memoire et l'organisation des donnees jouent aussi un role important.
 
-L'experience la plus claire pour moi est celle de la prediction d'embranchements : le simple fait de trier les donnees diminue fortement les mauvaises predictions et rend le traitement beaucoup plus rapide.
-
-Les autres experiences ont ete moins concluantes dans mes mesures. La latence DRAM a donne des graphes bruites, le false sharing n'a pas montre la difference attendue, et la cache locality n'a montre qu'un effet faible. Ce n'est pas inutile : cela montre aussi qu'une experience de performance est difficile a realiser correctement. Il faut faire plusieurs mesures, controler l'environnement, comprendre les compteurs de `perf`, et eviter que le compilateur ou le systeme d'exploitation faussent les resultats.
+Les autres experiences ont ete moins concluantes dans mes mesures. La latence DRAM a donne des graphes bruites, le false sharing n'a pas montre la difference attendue, et la cache locality n'a montre qu'un effet faible. Ce n'est pas inutile : cela montre aussi qu'une experience de performance est difficile a realiser correctement. 
 
 Pour la programmation concurrente, ces notions sont importantes. Ajouter des threads ne garantit pas de meilleures performances. Si plusieurs threads modifient des donnees proches en memoire, le false sharing peut ralentir le programme. Si les donnees sont mal organisees, les caches sont moins efficaces. Si le code contient des branches difficiles a predire, le processeur perd du temps.
 
